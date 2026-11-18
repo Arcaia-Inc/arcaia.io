@@ -15,7 +15,7 @@
   const cap = $(".intro-cap");
   const cue = $(".scrollcue");
 
-  // ---------------- how Arcadia works: six panels moved sideways by the scroll ----------------
+  // ---------------- how Sparki works: six panels moved sideways by the scroll ----------------
   const story = $("#how");
   const track = $("#storyTrack");
   const countEl = $("#storyN");
@@ -83,8 +83,8 @@
   frame();
 
   // ---------------- "Prepare a case in four clicks" ----------------
-  // The time given back uses Arcadia's own estimate per task (a trained paralegal's minutes, less the seconds a person
-  // spends reviewing Arcadia's work), the same estimates as the product's Performance page.
+  // The time given back uses Sparki's own estimate per task (a trained paralegal's minutes, less the seconds a person
+  // spends reviewing Sparki's work), the same estimates as the product's Performance page.
   const EST = { doc: 8 - 20 / 60, find: 6 - 30 / 60, answer: 1 - 5 / 60, form: 20 - 120 / 60 };
   const demo = $("#taste");
   const pile = $("#pile");
@@ -381,7 +381,7 @@
   });
   reset();
 
-  // ---------------- why Arcadia: the switch ----------------
+  // ---------------- why Sparki: the switch ----------------
   const flip = $("#flip");
   const sides = $$("#switch button");
   const knob = $("#switch .knob");
@@ -472,7 +472,7 @@
 
   // ---------------- count it for your firm ----------------
   // 6.6 hours is the sample case above: 8 documents read, 1 problem written up, 319 form answers drafted and 2 USCIS
-  // forms filled, at Arcadia's estimate of a paralegal's time for each, less the time spent reviewing.
+  // forms filled, at Sparki's estimate of a paralegal's time for each, less the time spent reviewing.
   const HOURS_A_CASE = 6.6;
   const casesIn = $("#cCases");
   const rateIn = $("#cRate");
