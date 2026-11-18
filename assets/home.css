@@ -1,5 +1,5 @@
 /* The home page's own pieces (loaded after styles.css): the pinned opening, the four-click taste on its dark stage,
-   the sideways story, the legacy-to-Arcadia switch, the command bar tile and the "count it" slider. */
+   the sideways story, the legacy-to-Sparki switch, the command bar tile and the "count it" slider. */
 
 /* ---------------- the opening: the city stays while the product rises over it ---------------- */
 .intro { position: relative; height: 230vh; background: var(--night); color: #fff; }
@@ -83,7 +83,7 @@
   .specs > div:nth-child(n+3) { margin-top: 18px; border-top: 1px solid rgba(246, 239, 227, 0.12); }
 }
 
-/* ---------------- how Arcadia works: panels that glide sideways as you scroll ---------------- */
+/* ---------------- how Sparki works: panels that glide sideways as you scroll ---------------- */
 .story { background: var(--ivory); position: relative; }
 .story-pin { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding-top: var(--head); }
 .story-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: clamp(18px, 3vh, 40px); }
@@ -110,7 +110,7 @@
   .panel .vis { min-height: 300px; height: auto; }
 }
 
-/* ---------------- why Arcadia: flip legacy software to Arcadia ---------------- */
+/* ---------------- why Sparki: flip legacy software to Sparki ---------------- */
 .why2 { padding: var(--sec) 0; }
 .why2 h2 { margin-top: 20px; max-width: 14em; }
 .why2 .lede { margin-top: 24px; }

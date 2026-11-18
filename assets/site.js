@@ -2,7 +2,7 @@
 // the phone menu, lets sections rise into view, lights the statement word by word, and sends the demo request form
 // to Murphy and Leon. The home page's own pieces are in home.js.
 
-// Where the form is sent: the Google Apps Script web app in Arcadia's Google Workspace, which emails both founders.
+// Where the form is sent: the Google Apps Script web app in Arcaia's Google Workspace, which emails both founders.
 // While it's empty, the form opens the visitor's own email app with the request filled in instead.
 const INQUIRY_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbyax7s4-FwY9X4KJt0L1SY9w_f7TtKAqBSMyNi2GweoE8VcLxGV4SzOjEIle9dUUkvNLQ/exec";
@@ -222,7 +222,7 @@ if (form) {
       finish(false);
     } catch {
       showError(
-        'Sorry, your request didn\'t go through. Please try again, or email <a href="mailto:murphy@arcadiaimmtech.com?subject=Arcadia%20demo">murphy@arcadiaimmtech.com</a>.',
+        'Sorry, your request didn\'t go through. Please try again, or email <a href="mailto:murphy@arcadiaimmtech.com?subject=Sparki%20demo">murphy@arcadiaimmtech.com</a>.',
       );
     } finally {
       clearTimeout(timer);
