@@ -44,8 +44,10 @@ mark no smaller than 16px.
 - `arcaia-logo-horizontal-light.svg` is for dark backgrounds (the header over the photograph, the footer).
 - `arcaia-mark-daylight.svg` and `arcaia-mark-light.svg` are the mark alone, for light and dark backgrounds.
 - The header holds both horizontal logos and `assets/styles.css` shows the one that suits what is behind it.
-- Sparki has no logo file yet. Its name is set in the page's own type; in the home page's miniature its "S" with
-  the terracotta dot is drawn in text, as the product itself does.
+- `sparki-lockup-dark.svg` (on the home page's photograph), `sparki-lockup-light.svg` (at the top of the Product page)
+  and `sparki-monogram-dark.svg` (in the home page's miniature) are the product's logo, copied unchanged from the
+  Sparki logo packet. Its rules: dark files on dark backgrounds, light files on light; never retype or recolour;
+  the lockup no narrower than 100px. The site's own header, footer, icons and sharing picture stay Arcaia's.
 - `favicon.svg`, `favicon.ico` and `apple-touch-icon.png` are the kit's small-size cut of the mark.
 
 ## Photographs
@@ -57,9 +59,10 @@ Places only: no people, hands or staged rooms. In use:
 | `la-dusk` | photo-1515896769750-31548aa180ed |
 | `la-night` | photo-1444723121867-7a241cacace9 |
 
-The product pictures in `assets/img/product/` are screenshots of the product with fictional sample cases. They
-still show the screens from before the rename (the old logo and the name Arcadia) and are to be replaced with
-pictures of Sparki's current screens.
+The product pictures in `assets/img/product/` are screenshots of Sparki with fictional sample cases, taken on
+2026-11-18 from the saved demo copy of that day (1440 wide at 1.25x; the close-up at 2x). The product then still
+drew a stand-in for its logo (an "S" with a dot, and the word Sparki in type), so the pictures are to be taken
+again once the product carries the designer's Sparki logo.
 
 ## Preview on this Mac
 ```bash
