@@ -3,9 +3,10 @@
 The company is Arcaia (until 2026-11-14: Arcadia Immigration Technology, "Arcadia"). Its first product, the AI case
 workspace for immigration law firms, is Sparki. Write "Sparki" where the product is meant and "Arcaia" where the
 company is meant. The site's address is arcaia.io (`CNAME` holds it; GitHub writes that file when the custom domain is
-set in the repository's Pages settings). The earlier address, arcadiaimmtech.com, forwards here from its registrar
-and must be kept: it carries the company's mail. The printed email addresses stay at the old domain until mail at
-arcaia.io has been tested.
+set in the repository's Pages settings). The earlier address, arcadiaimmtech.com, no longer serves the website and is
+not forwarded (Murphy's decision, 2026-11-18). The domain itself is kept: it carries the company's mail and is the
+sign-in address of the company's accounts. The printed email addresses stay at the old domain until mail at arcaia.io
+has been tested.
 
 The public site: Sparki's pages for law firms, and the company's page. Plain HTML and CSS: no build step, no server code, no cookies, no analytics. One form (the demo request), sent by email.
 
