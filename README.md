@@ -2,8 +2,10 @@
 
 The company is Arcaia (until 2026-11-14: Arcadia Immigration Technology, "Arcadia"). Its first product, the AI case
 workspace for immigration law firms, is Sparki. Write "Sparki" where the product is meant and "Arcaia" where the
-company is meant. Until the move is finished the site is still served at arcadiaimmtech.com (see `CNAME`), and the
-printed email addresses stay at the old domain until mail at arcaia.io has been tested.
+company is meant. The site's address is arcaia.io (`CNAME` holds it; GitHub writes that file when the custom domain is
+set in the repository's Pages settings). The earlier address, arcadiaimmtech.com, forwards here from its registrar
+and must be kept: it carries the company's mail. The printed email addresses stay at the old domain until mail at
+arcaia.io has been tested.
 
 The public site: Sparki's pages for law firms, and the company's page. Plain HTML and CSS: no build step, no server code, no cookies, no analytics. One form (the demo request), sent by email.
 
@@ -18,6 +20,11 @@ The public site: Sparki's pages for law firms, and the company's page. Plain HTM
 | `company.html` | The company, Arcaia: what it builds, what we believe, where we start, the founders |
 | `demo.html` | Request a demo: what happens next, the form and the questions |
 | `privacy.html` | Privacy notice |
+
+`how-it-works.html` is not a page of its own: it forwards to the home page's "How Sparki works" section, because the
+company's email signatures link to `arcaia.io/how-it-works`. `sitemap.xml` lists the six pages and `robots.txt` points
+to it. Each page names its own address at arcaia.io in a canonical link and in its sharing tags; change all three
+places if a page is ever renamed.
 
 Every page carries the same header (logo, Try it, Product, Security, Company, Request a demo) and the same footer. They're written out in each file, so change all six when you change one. Links to the old site's sections (`/#demo`, `/#team`, `/#faq`, `/#inside`, `/#tour`) are sent to their new places by `assets/site.js`; `company.html#founders`, `product.html#features`, `product.html#clients` and `demo.html#faq` still exist.
 
