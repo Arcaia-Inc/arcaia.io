@@ -6,7 +6,7 @@
 // While it's empty, the form opens the visitor's own email app with the request filled in instead.
 const INQUIRY_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbyax7s4-FwY9X4KJt0L1SY9w_f7TtKAqBSMyNi2GweoE8VcLxGV4SzOjEIle9dUUkvNLQ/exec";
-const INQUIRY_EMAILS = "murphy@arcadiaimmtech.com,leon.li@arcadiaimmtech.com";
+const INQUIRY_EMAILS = "murphy@arcaia.io,leon.li@arcaia.io";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const page = document.body.dataset.page;
@@ -222,7 +222,7 @@ if (form) {
       finish(false);
     } catch {
       showError(
-        'Sorry, your request didn\'t go through. Please try again, or email <a href="mailto:murphy@arcadiaimmtech.com?subject=Sparki%20demo">murphy@arcadiaimmtech.com</a>.',
+        'Sorry, your request didn\'t go through. Please try again, or email <a href="mailto:murphy@arcaia.io?subject=Sparki%20demo">murphy@arcaia.io</a>.',
       );
     } finally {
       clearTimeout(timer);
