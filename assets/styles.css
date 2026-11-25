@@ -571,6 +571,23 @@ nav.main .btn { padding: 12px 20px; font-size: 14.5px; background: var(--ink); c
 .person h3 { font-size: clamp(26px, 2.4vw, 34px); letter-spacing: -0.03em; }
 .person .role { margin: 8px 0 18px; }
 .person p.bio { font-size: 17px; max-width: 30em; }
+/* A person's bio is folded until asked for: the browser's own details element, so it opens by click, Enter or Space
+   and says "collapsed" or "expanded" to a screen reader. */
+.person .bio-more { max-width: 30em; }
+.person .bio-more summary { display: inline-flex; align-items: center; gap: 10px; padding: 8px 0; cursor: pointer; list-style: none; font-size: 15px; font-weight: 600; color: var(--ink); }
+.person .bio-more summary::-webkit-details-marker { display: none; }
+.person .bio-more .when-open, .person .bio-more[open] .when-closed { display: none; }
+.person .bio-more[open] .when-open { display: inline; }
+.person .bio-more .mark { position: relative; flex: none; width: 11px; height: 11px; }
+.person .bio-more .mark::before, .person .bio-more .mark::after { content: ""; position: absolute; left: 0; top: 5px; width: 11px; height: 1.5px; background: var(--terra); transition: transform 0.3s var(--ease); }
+.person .bio-more .mark::after { transform: rotate(90deg); }
+.person .bio-more[open] .mark::after { transform: rotate(0deg); }
+.person .bio-more p.bio { margin-top: 10px; }
+.person .bio-more + .mail { margin-top: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  .person .bio-more[open] p.bio { animation: bio-in 0.35s var(--ease) both; }
+  @keyframes bio-in { from { opacity: 0; transform: translateY(-4px); } }
+}
 .person .mail { margin-top: 20px; display: inline-block; font-size: 15px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-2); padding-bottom: 2px; }
 @media (max-width: 860px) { .people { grid-template-columns: 1fr; } }
 
